@@ -30,7 +30,7 @@ Once you have determined all of the pages of a site, your sitemap builder should
 </urlset>
 ```
 
-*Note: This is the same format that Google uses.*
+*Note: This should be the same as the [standard sitemap protocol](https://www.sitemaps.org/index.html)*
 
 Where each page is listed in its own `<url>` tag and includes the `<loc>` tag inside of it.
 
