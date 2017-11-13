@@ -56,6 +56,15 @@ Where the cycle takes 4 links to finally reach it, but there is indeed a cycle.
 This is important to remember because you don't want your program to get into an infinite loop where it keeps visiting the same few pages over and over. If you are having issues with this, the bonus exercise might help temporarily alleviate the problem but we will cover how to avoid this entirely in the screencasts for this exercise.
 
 
+**2. The following packages will be helpful...**
+
+- [net/http](https://golang.org/pkg/net/http/) - to initiate GET requests to each page in your sitemap and get the HTML on that page
+- the `solution` branch of [github.com/gophercises/link](https://github.com/gophercises/link) - you won't be able to `go get` this package because it isn't committed to master, but if you complete the exercise locally you can use the code from it in this exercise. If this causes confusion or issues reach out and I'll help you figure out how to do all of this! <jon@calhoun.io>
+- [encoding/xml](https://golang.org/pkg/encoding/xml/) - to print out the XML output at the end
+- [flag](https://golang.org/pkg/flag/) - to parse user provided flags like the website domain
+
+I'm probably missing a few packages here so don't worry if you are using others. This is just a rough list of packages I expect to use myself  when I code this for the screencasts 😁
+
 ## Bonus
 
 As a bonus exercises you can also add in a `depth` flag that defines the maximum number of links to follow when building a sitemap. For instance, if you had a max depth of 3 and the following links:
